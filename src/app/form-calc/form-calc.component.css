@@ -1,0 +1,40 @@
+.calc-body {
+  width: 400px;
+  height: 350px;
+  background-color: gray;
+  padding: 10px;
+  color: white;
+}
+
+.calc-body input[type="button"] {
+  width: 60px;
+  height: 60px;
+}
+
+.calc-body label {
+  width: 25px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.mb-5 {
+  margin-bottom: 2.5rem;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}

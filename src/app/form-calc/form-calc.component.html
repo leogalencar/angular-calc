@@ -1,0 +1,30 @@
+<div class="calc-body">
+  <h1 class="text-center">Calculator</h1>
+  <div class="input mb-5">
+    <div class="calc-row d-flex justify-content-between" style="gap: 10px">
+      <div class="d-flex flex-column">
+        <label for="num1">X: </label>
+        <input type="number" [(ngModel)]="num1" name="num1">
+      </div>
+      <div class="d-flex flex-column">
+        <label for="num2">Y: </label>
+        <input type="number" [(ngModel)]="num2" name="num2">
+      </div>
+    </div>
+  </div>
+  <div class="buttons mb-5">
+    <div class="calc-row d-flex">
+      <input type="button" value="+" (click)="onClickOperation($event)">
+      <input type="button" value="-" (click)="onClickOperation($event)">
+      <input type="button" value="X" (click)="onClickOperation($event)">
+      <input type="button" value="/" (click)="onClickOperation($event)">
+      <input type="button" value="x^y" (click)="onClickOperation($event)">
+      <input type="button" value="1/x" (click)="onClickOperation($event)">
+      <input type="button" value="sqrt(x)" (click)="onClickOperation($event)">
+    </div>
+  </div>
+  <div class="output d-flex flex-column">
+    <label for="answer">Answer: </label>
+    <input type="text" readonly value="{{ output }}" name="answer">
+  </div>
+</div>
