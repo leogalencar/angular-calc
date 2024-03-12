@@ -13,9 +13,6 @@ export class FormCalcComponent {
 
   onClickOperation(event: any) {
     switch (event.target.value) {
-      case "C":
-
-        break;
       case "+":
         this.output = this.num1 + this.num2;
         break;
